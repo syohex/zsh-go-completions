@@ -2,6 +2,7 @@
 
 local -a go_packages
 
+go_packages=("builtin")
 for dir in $GOROOT $GOPATH
 do
     pkgdir="$dir/pkg"
