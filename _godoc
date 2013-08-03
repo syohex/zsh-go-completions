@@ -3,7 +3,7 @@
 local -a go_packages
 
 go_packages=("builtin")
-for dir in $GOROOT $GOPATH
+for dir in $GOROOT $(perl -wle 'print $_ for split q{:}, $ENV{GOPATH}')
 do
     pkgdir="$dir/pkg"
     if [ -d $pkgdir ]; then
