@@ -1,6 +1,6 @@
 # zsh go completions
 * godoc
-* gom
+* [gom](https://github.com/mattn/gom)
 
 ## How to Use
 
