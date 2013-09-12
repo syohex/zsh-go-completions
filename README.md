@@ -1,5 +1,6 @@
 # zsh go completions
 * godoc
+* gom
 
 ## How to Use
 
