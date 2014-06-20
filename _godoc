@@ -7,7 +7,7 @@ for dir in $GOROOT $(perl -wle 'print $_ for split q{:}, $ENV{GOPATH}')
 do
     pkgdir="$dir/pkg"
     if [ -d $pkgdir ]; then
-      packages=$(find $pkgdir -name "*.a" \
+      packages=$(find $pkgdir -name '*.a' -type f \
         | perl -wlp -e "s{$pkgdir/(?:(?:obj|tool)/)?[^/]+/}{} and s{\\.a\$}{}")
       go_packages=($packages $go_packages)
     fi
