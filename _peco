@@ -5,6 +5,7 @@ _arguments -n : \
   '(--rcfile)--rcfile=[Configuration file]:config_file:_files' \
   '(--null)--null=[Use null character as separator]' \
   '(--no-ignore-case)--no-ignore-case=[Starts in case insensitive mode]' \
+  '(-b,--buffer-size)'{-b,--buffer-size}='[Number of lines to keep in search buffer]' \
   '(--version)--version=[Display the version of peco]' \
   '(--help)--help=[Display a help message]' \
   '*: :()'
