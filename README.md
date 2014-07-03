@@ -1,6 +1,7 @@
 # zsh go completions
 * godoc
 * [gom](https://github.com/mattn/gom)
+* [peco](https://github.com/peco/peco)
 
 ## How to Use
 
