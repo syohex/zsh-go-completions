@@ -7,6 +7,7 @@ _arguments -n : \
   '(--no-ignore-case)--no-ignore-case=[Starts in case insensitive mode]' \
   '(-b,--buffer-size)'{-b,--buffer-size}='[Number of lines to keep in search buffer]' \
   '(--initial-index)--initial-index=[Position of the initial index of the selection(0 base)]' \
+  '(--initial-matcher)--initial-matcher=[Specify default matcher]:matcher:(IgnoreCaseMatch CaseSensitiveMatch RegexpMatch)' \
   '(--prompt)--prompt=[Specify prompt]' \
   '(--version)--version=[Display the version of peco]' \
   '(--help)--help=[Display a help message]' \
