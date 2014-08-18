@@ -8,6 +8,7 @@ _arguments -n : \
   '(-b,--buffer-size)'{-b,--buffer-size}='[Number of lines to keep in search buffer]' \
   '(--initial-index)--initial-index=[Position of the initial index of the selection(0 base)]' \
   '(--initial-matcher)--initial-matcher=[Specify default matcher]:matcher:(IgnoreCase CaseSensitive Regexp)' \
+  '(--layout)--layout=[Speficy the layout to use]:layout:(top-down bottom-up)' \
   '(--prompt)--prompt=[Specify prompt]' \
   '(--version)--version=[Display the version of peco]' \
   '(--help)--help=[Display a help message]' \
