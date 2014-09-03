@@ -19,3 +19,9 @@ Add following code to your zsh configuration file(such as `~/.zshrc`)
 ```sh
 fpath=(~/.zsh/go-completions $fpath)
 ```
+
+### ScreenCast
+
+#### peco
+
+![peco](image/peco.gif)
