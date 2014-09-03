@@ -1,5 +1,22 @@
 #compdef peco
 
+local -a matchers
+local pecorc
+
+if [ -e "$XDG_CONFIG_DIRS/peco/config.json" ]; then
+  pecorc="$XDG_CONFIG_DIRS/peco/config.json"
+elif [ -e "$HOME/.peco/config.json" ]; then
+  pecorc="$HOME/.peco/config.json"
+fi
+
+matchers=(IgnoreCase CaseSensitive Regexp)
+if [ "x$pecorc" != "x" ]; then
+  matchers=($matchers
+            $(perl -0777 -MJSON::PP -ne \
+                   'print "$_\n" for keys %{decode_json($_)->{CustomMatcher}}' \
+                   $pecorc))
+fi
+
 _arguments -n : \
   '(--query)--query=[Specifies the default query to be used upon startup]' \
   '(--rcfile)--rcfile=[Configuration file]:config_file:_files' \
@@ -7,7 +24,7 @@ _arguments -n : \
   '(--no-ignore-case)--no-ignore-case=[Starts in case insensitive mode]' \
   '(-b,--buffer-size)'{-b,--buffer-size}='[Number of lines to keep in search buffer]' \
   '(--initial-index)--initial-index=[Position of the initial index of the selection(0 base)]' \
-  '(--initial-matcher)--initial-matcher=[Specify default matcher]:matcher:(IgnoreCase CaseSensitive Regexp)' \
+  '(--initial-matcher)--initial-matcher=[Specify default matcher]:matcher:'"($matchers)" \
   '(--layout)--layout=[Speficy the layout to use]:layout:(top-down bottom-up)' \
   '(--prompt)--prompt=[Specify prompt]' \
   '(--version)--version=[Display the version of peco]' \
