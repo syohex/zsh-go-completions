@@ -9,7 +9,7 @@ elif [ -e "$HOME/.peco/config.json" ]; then
   pecorc="$HOME/.peco/config.json"
 fi
 
-matchers=(IgnoreCase CaseSensitive Regexp)
+matchers=(IgnoreCase CaseSensitive Regexp SmartCase)
 if [ "x$pecorc" != "x" ]; then
   matchers=($matchers
             $(perl -0777 -MJSON::PP -ne \
