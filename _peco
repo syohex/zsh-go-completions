@@ -18,17 +18,17 @@ if [ "x$pecorc" != "x" ]; then
 fi
 
 _arguments -n : \
-  '(--query)--query=[Specifies the default query to be used upon startup]' \
+  '(--query)--query=-[Specifies the default query to be used upon startup]' \
   '(--rcfile)--rcfile=[Configuration file]:config_file:_files' \
-  '(--null)--null=[Use null character as separator]' \
+  '(--null)--null[Use null character as separator]' \
   '(--no-ignore-case)--no-ignore-case=[Starts in case insensitive mode]' \
-  '(-b,--buffer-size)'{-b,--buffer-size}='[Number of lines to keep in search buffer]' \
-  '(--initial-index)--initial-index=[Position of the initial index of the selection(0 base)]' \
-  '(--initial-matcher)--initial-matcher=[Specify default matcher]:matcher:'"($matchers)" \
-  '(--layout)--layout=[Speficy the layout to use]:layout:(top-down bottom-up)' \
-  '(--prompt)--prompt=[Specify prompt]' \
-  '(--version)--version=[Display the version of peco]' \
-  '(--help)--help=[Display a help message]' \
+  '(-b,--buffer-size)'{-b,--buffer-size=-}'[Number of lines to keep in search buffer]' \
+  '(--initial-index)--initial-index=-[Position of the initial index of the selection(0 base)]' \
+  '(--initial-matcher)--initial-matcher=-[Specify default matcher]:matcher:'"($matchers)" \
+  '(--layout)--layout=-[Speficy the layout to use]::layout:(top-down bottom-up)' \
+  '(--prompt)--prompt=-[Specify prompt]' \
+  '(--version)--version[Display the version of peco]' \
+  '(--help)--help[Display a help message]' \
   '*: :()'
 
 # Local Variables:
