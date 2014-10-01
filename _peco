@@ -27,8 +27,8 @@ _arguments -n : \
   '(--initial-matcher)--initial-matcher=-[Specify default matcher]:matcher:'"($matchers)" \
   '(--layout)--layout=-[Speficy the layout to use]::layout:(top-down bottom-up)' \
   '(--prompt)--prompt=-[Specify prompt]' \
-  '(--version)--version[Display the version of peco]' \
-  '(--help)--help[Display a help message]' \
+  '(- :)--version[Display the version of peco]' \
+  '(- :)--help[Display a help message]' \
   '*: :()'
 
 # Local Variables:
