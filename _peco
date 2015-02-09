@@ -29,7 +29,7 @@ _arguments -n : \
   '(--prompt)--prompt=-[Specify prompt]' \
   '(- :)--version[Display the version of peco]' \
   '(- :)--help[Display a help message]' \
-  '*: :()'
+  '*: :_files'
 
 # Local Variables:
 # mode: Shell-Script
