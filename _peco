@@ -24,7 +24,7 @@ _arguments -n : \
   '(--no-ignore-case)--no-ignore-case=[Starts in case insensitive mode]' \
   '(-b,--buffer-size)'{-b,--buffer-size=-}'[Number of lines to keep in search buffer]' \
   '(--initial-index)--initial-index=-[Position of the initial index of the selection(0 base)]' \
-  '(--initial-matcher)--initial-matcher=-[Specify default matcher]:matcher:'"($matchers)" \
+  '(--initial-filter --initial-matcher)'{--initial-filter,--initial-matcher=-}'[Specify default matcher]:matcher:'"($matchers)" \
   '(--layout)--layout=-[Speficy the layout to use]::layout:(top-down bottom-up)' \
   '(--prompt)--prompt=-[Specify prompt]' \
   '(- :)--version[Display the version of peco]' \
