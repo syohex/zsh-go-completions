@@ -6,6 +6,7 @@ _arguments -n : \
   '(--cursor)--cursor[Record mouse cursor(default: disable)]' \
   '(--audio)--audio[Record audio(default: disable)]' \
   '(--rectangle)--rectangle[Record specified rectangle instead of window]' \
+  '(- :)'{-v,--version}'[Show version]' \
   '*: :_files'
 
 # Local Variables:
