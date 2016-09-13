@@ -25,9 +25,9 @@
 _arguments -n : \
   '(-d --duration)'{-d,--duration=}'[Capture duration(second)]' \
   '(--delay)--delay=[Delay before recording(second)]' \
-  '(--cursor)--cursor[Record mouse cursor(default: disable)]' \
-  '(--audio)--audio[Record audio(default: disable)]' \
-  '(--rectangle)--rectangle[Record specified rectangle instead of window]' \
+  '(-c --cursor)'{-c,--cursor}'[Record mouse cursor(default: disable)]' \
+  '(-a --audio)'{-a,--audio}'[Record audio(default: disable)]' \
+  '(-r --rectangle)'{-r,--rectangle}'[Record specified rectangle instead of window]' \
   '(- :)'{-v,--version}'[Show version]' \
   '*: :_files'
 
