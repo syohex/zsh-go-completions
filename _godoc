@@ -24,16 +24,7 @@
 
 local -a go_packages
 
-go_packages=("builtin")
-for dir in $GOROOT $(perl -wle 'print $_ for split q{:}, $ENV{GOPATH}')
-do
-    pkgdir="$dir/pkg"
-    if [ -d $pkgdir ]; then
-      packages=$(find $pkgdir -name '*.a' -type f \
-        | perl -wlp -e "s{$pkgdir/(?:(?:obj|tool)/)?[^/]+/}{} and s{\\.a\$}{}")
-      go_packages=($packages $go_packages)
-    fi
-done
+go_packages=($(gopkgs | sort -u))
 
 _arguments -n : \
   '(-ex)-ex=[show examples in command line mode]:bool:(true false)' \

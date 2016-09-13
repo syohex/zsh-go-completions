@@ -4,6 +4,10 @@
 * [peco](https://github.com/peco/peco)
 * [byzanz-window](https://github.com/syohex/byzanz-window)
 
+## Requirements
+
+- [gopkgs](https://github.com/haya14busa/gopkgs) for godoc completion
+
 ## How to Use
 
 ### Download Repository
