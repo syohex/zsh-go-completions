@@ -28,6 +28,7 @@ _arguments -n : \
   '(-c --cursor)'{-c,--cursor}'[Record mouse cursor(default: disable)]' \
   '(-a --audio)'{-a,--audio}'[Record audio(default: disable)]' \
   '(-r --rectangle)'{-r,--rectangle}'[Record specified rectangle instead of window]' \
+  '(-V --verbose)'{-v,--verbose}'[Make the output verbose]' \
   '(- :)'{-v,--version}'[Show version]' \
   '*: :_files'
 
