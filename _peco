@@ -50,6 +50,7 @@ _arguments -n : \
   '(--layout)--layout=-[Speficy the layout to use]::layout:(top-down bottom-up)' \
   '(--prompt)--prompt=-[Specify prompt]' \
   '(--select-1)--select-1[Select first item if given 1 item]' \
+  '(--on-cancel)--on-cancel=[Specify action on cancel]::action:(success error)' \
   '(- :)--version[Display the version of peco]' \
   '(- :)--help[Display a help message]' \
   '*: :_files'
