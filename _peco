@@ -25,14 +25,14 @@
 local -a matchers
 local pecorc
 
-if [ -e "$XDG_CONFIG_DIRS/peco/config.json" ]; then
+if [[ -e "$XDG_CONFIG_DIRS/peco/config.json" ]]; then
   pecorc="$XDG_CONFIG_DIRS/peco/config.json"
-elif [ -e "$HOME/.peco/config.json" ]; then
+elif [[ -e "$HOME/.peco/config.json" ]]; then
   pecorc="$HOME/.peco/config.json"
 fi
 
 matchers=(IgnoreCase CaseSensitive Regexp SmartCase)
-if [ "x$pecorc" != "x" ]; then
+if [[ "x$pecorc" != "x" ]]; then
   matchers=($matchers
             $(perl -0777 -MJSON::PP -ne \
                    'print "$_\n" for keys %{decode_json($_)->{CustomMatcher}}' \
