@@ -51,6 +51,7 @@ _arguments -n : \
   '(--prompt)--prompt=-[Specify prompt]' \
   '(--select-1)--select-1[Select first item if given 1 item]' \
   '(--on-cancel)--on-cancel=[Specify action on cancel]::action:(success error)' \
+  '(--selection-prefix)--selection-prefix=[Prefix of current selected line]' \
   '(- :)--version[Display the version of peco]' \
   '(- :)--help[Display a help message]' \
   '*: :_files'
