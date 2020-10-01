@@ -1,8 +1,12 @@
 # zsh go completions
-* godoc
-* [gom](https://github.com/mattn/gom)
-* [peco](https://github.com/peco/peco)
-* [byzanz-window](https://github.com/syohex/byzanz-window)
+
+My own zsh completion collections
+
+- godoc
+- [gom](https://github.com/mattn/gom)
+- [peco](https://github.com/peco/peco)
+- [byzanz-window](https://github.com/syohex/byzanz-window)
+- [alp](https://github.com/tkuchiki/alp)
 
 ## Requirements
 
