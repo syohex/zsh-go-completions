@@ -1,5 +1,7 @@
 # zsh go completions
 
+Move to [https://github.com/syohex/zsh-misc-completions](https://github.com/syohex/zsh-misc-completions)
+
 My own zsh completion collections
 
 - godoc
